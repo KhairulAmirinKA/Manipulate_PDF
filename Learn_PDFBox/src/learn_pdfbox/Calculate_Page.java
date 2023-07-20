@@ -26,8 +26,10 @@ public class Calculate_Page {
             
             File file= new File("LinkedList.pdf");
             
+            //load pdf
             PDDocument doc= Loader.loadPDF(file);
             
+            //get the page numbers
             int page= doc.getNumberOfPages();
             
             System.out.println("The number of pages: "+ page);
